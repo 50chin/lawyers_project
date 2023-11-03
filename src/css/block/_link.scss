@@ -1,0 +1,16 @@
+.nav {
+  &__link {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-decoration: none;
+
+    &:hover {
+      color: #4f8ff0;
+      text-decoration-line: underline;
+    }
+  }
+}

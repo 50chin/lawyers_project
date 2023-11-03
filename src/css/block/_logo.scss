@@ -1,0 +1,22 @@
+.logo {
+  
+  &__title {
+    color: #4f8ff0;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+
+    color: #fff;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%;
+    text-transform: lowercase;
+    margin-top: -10px;
+  }
+}

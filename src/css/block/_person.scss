@@ -1,0 +1,50 @@
+.person {
+  background: #fff;
+  box-shadow: 2px 2px 12px 0px rgba(33, 33, 33, 0.12);
+  max-width: 350px;
+  min-width: 250px;
+  width: 320px;
+  position: relative;
+
+  &:hover {
+    cursor: url(../img/icon/pointer.svg), auto;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    background: lightgray;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__text {
+    padding: 24px 16px;
+    text-align: center;
+  }
+
+  &__name {
+    color: #222;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+
+  &__post {
+    color: #222;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+    text-transform: lowercase;
+    margin-top: 10px;
+  }
+
+  &__name,
+  &__post {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}

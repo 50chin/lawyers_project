@@ -1,0 +1,68 @@
+.description {
+  &__title {
+    color: #222;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    color: #222;
+    font-size: 14px;
+    font-weight: 300;
+    padding-top: 10px;
+  }
+
+  &__about {
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+    padding-top: 40px;
+  }
+
+  &__experience {
+    color: #222;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 40px;
+  }
+
+  &__lt {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-top: 1px solid #4f8ff0;
+    border-left: 1px solid #4f8ff0;
+    top: 20px;
+    left: 20px;
+  }
+
+  &__rt {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-top: 1px solid #4f8ff0;
+    border-right: 1px solid #4f8ff0;
+    top: 20px;
+    right: 20px;
+  }
+
+  &__lb {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-bottom: 1px solid #4f8ff0;
+    border-left: 1px solid #4f8ff0;
+    left: 20px;
+    bottom: 20px;
+  }
+
+  &__rb {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-bottom: 1px solid #4f8ff0;
+    border-right: 1px solid #4f8ff0;
+    bottom: 20px;
+    right: 20px;
+  }
+}

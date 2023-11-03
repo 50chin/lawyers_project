@@ -1,0 +1,56 @@
+.feedback {
+  background-image: url(../img/feedback/Фон\ блока.png);
+
+  &__top__flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0 61px;
+  }
+
+  &__navigation {
+    display: flex;
+    .btn {
+      background: transparent;
+      border: none;
+    }
+  }
+
+  &__title {
+    color: #222;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 150%;
+    text-transform: uppercase;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__card {
+    padding: 32px;
+    max-width: 648px;
+  }
+
+  &__btn {
+    padding: 0 32px 80px;
+    display: flex;
+    gap: 24px;
+    width: 100%;
+
+    .btn {
+      padding: 16px 24px;
+      color: #222;
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 120%;
+      text-transform: uppercase;
+
+      &:hover {
+        border: 2px solid #4f8ff0;
+        background: #4f8ff0;
+        color: #fff;
+      }
+    }
+  }
+}

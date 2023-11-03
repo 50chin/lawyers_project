@@ -1,0 +1,68 @@
+.company {
+  background: #fff;
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+  }
+
+  &__title {
+    color: #222;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 150%; /* 42px */
+    text-transform: uppercase;
+  }
+
+  &__title span {
+    color: #4f8ff0;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 150%;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    color: #222;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    padding-top: 37px;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__img {
+    box-shadow: 4px 4px 12px 2px rgba(33, 33, 33, 0.25);
+    display: block;
+    width: 535px;
+    height: 359px;
+  }
+
+  &__btns {
+    display: flex;
+    gap: 0 24px;
+    padding-top: 32px;
+    padding-bottom: 80px;
+  }
+
+  &__btns button {
+    padding: 16px 24px;
+    color: #222;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%;
+    text-transform: uppercase;
+
+    &:hover {
+      border: 2px solid #4f8ff0;
+      background: #4f8ff0;
+      color: white;
+    }
+  }
+}
