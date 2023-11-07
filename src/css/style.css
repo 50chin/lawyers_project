@@ -18,6 +18,18 @@ button {
   cursor: pointer;
 }
 
+@media (max-width: 991px) {
+  .container {
+    max-width: 694px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 390px) {
+  .container {
+    max-width: 342px;
+    margin: 0 auto;
+  }
+}
 .header {
   max-width: 1920px;
   margin: 0 auto;
@@ -76,7 +88,11 @@ button {
   background: #000;
   text-decoration: none;
 }
-
+@media (max-width: 991px) {
+  .header__nav {
+    display: none;
+  }
+}
 .hero {
   background-image: url(../img/bg/main_top.webp);
   background-repeat: no-repeat;
@@ -91,7 +107,7 @@ button {
 .hero__content {
   text-align: center;
   color: #fff;
-  margin: 260px auto 36px;
+  margin: 180px auto 36px;
 }
 .hero__title {
   color: #fff;
@@ -167,6 +183,56 @@ button {
 .hero__navigation__navigation2 {
   display: flex;
   align-items: center;
+}
+@media (max-width: 991px) {
+  .hero {
+    max-width: 991px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 529px;
+  }
+  .hero__title {
+    font-size: 24px;
+    line-height: 120%;
+  }
+  .hero__title span {
+    font-size: 50px;
+    padding: 8px;
+  }
+  .hero__btn {
+    margin-top: 46px;
+  }
+  .hero__subtitle {
+    font-size: 18px;
+  }
+  .hero__end {
+    margin-top: 36px;
+  }
+}
+@media (max-width: 390px) {
+  .hero {
+    max-width: 845px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 486px;
+  }
+  .hero__title {
+    font-size: 18px;
+  }
+  .hero__title span {
+    font-size: 27px;
+  }
+  .hero__btn {
+    margin-top: 32px;
+  }
+  .hero__subtitle {
+    font-size: 16px;
+  }
+  .hero__end {
+    display: none;
+  }
 }
 
 .services {
@@ -253,6 +319,28 @@ button {
   border: 2px solid #4f8ff0;
   background: #4f8ff0;
   color: #fff;
+}
+@media (max-width: 991px) {
+  .services__content {
+    margin: 60px auto;
+  }
+  .services__title {
+    font-size: 24px;
+  }
+  .services__subtitle {
+    font-size: 16px;
+  }
+}
+@media (max-width: 390px) {
+  .services__content {
+    margin: 40px auto;
+  }
+  .services__title {
+    font-size: 24px;
+  }
+  .services__subtitle {
+    font-size: 16px;
+  }
 }
 
 .company {
@@ -700,6 +788,11 @@ button {
   align-items: center;
 }
 
+@media (max-width: 390px) {
+  .mail {
+    display: none;
+  }
+}
 .logo__title {
   color: #4f8ff0;
   font-size: 28px;
@@ -716,6 +809,22 @@ button {
   line-height: 150%;
   text-transform: lowercase;
   margin-top: -10px;
+}
+@media (max-width: 991px) {
+  .logo__title {
+    font-size: 22px;
+  }
+  .logo__subtitle {
+    font-size: 16px;
+  }
+}
+@media (max-width: 390px) {
+  .logo__title {
+    font-size: 22px;
+  }
+  .logo__subtitle {
+    font-size: 16px;
+  }
 }
 
 .nav__link {

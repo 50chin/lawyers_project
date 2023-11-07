@@ -17,3 +17,17 @@ body {
 button {
   cursor: pointer;
 }
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 694px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 390px) {
+  .container {
+    max-width: 342px;
+    margin: 0 auto;
+  }
+}

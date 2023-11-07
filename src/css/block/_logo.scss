@@ -1,5 +1,4 @@
 .logo {
-  
   &__title {
     color: #4f8ff0;
     font-size: 28px;
@@ -10,7 +9,6 @@
   }
 
   &__subtitle {
-
     color: #fff;
     font-size: 20px;
     font-style: normal;
@@ -18,5 +16,23 @@
     line-height: 150%;
     text-transform: lowercase;
     margin-top: -10px;
+  }
+
+  @media (max-width: 991px) {
+    &__title {
+      font-size: 22px;
+    }
+    &__subtitle {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 390px) {
+    &__title {
+      font-size: 22px;
+    }
+    &__subtitle {
+      font-size: 16px;
+    }
   }
 }

@@ -13,7 +13,7 @@
   &__content {
     text-align: center;
     color: #fff;
-    margin: 260px auto 36px;
+    margin: 180px auto 36px;
   }
 
   &__title {
@@ -101,6 +101,61 @@
     &__navigation2 {
       display: flex;
       align-items: center;
+    }
+  }
+
+  @media (max-width: 991px) {
+    max-width: 991px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 529px;
+    &__title {
+      font-size: 24px;
+      line-height: 120%;
+      span {
+        font-size: 50px;
+        padding: 8px;
+      }
+    }
+
+    &__btn {
+      margin-top: 46px;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+    }
+
+    &__end {
+      margin-top: 36px;
+    }
+  }
+
+  @media (max-width: 390px) {
+    max-width: 845px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 486px;
+
+    &__title {
+      font-size: 18px;
+      span {
+        font-size: 27px;
+      }
+    }
+
+    &__btn {
+      margin-top: 32px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+    }
+
+    &__end {
+      display: none;
     }
   }
 }
