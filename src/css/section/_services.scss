@@ -10,6 +10,7 @@
 
   &__content {
     margin: 80px auto;
+    width: 100%;
   }
 
   &__title {
@@ -27,19 +28,20 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 120%;
-
     max-width: 920px;
     margin: 37px auto 0;
   }
 
   &__cards {
     max-width: 1320px;
-    margin-top: 48px;
+    padding-top: 48px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(424px, 1fr));
     gap: 24px;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
   }
 
   &__card {

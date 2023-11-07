@@ -100,6 +100,7 @@ button {
   display: flex;
   align-items: center;
   flex-direction: column;
+  text-transform: uppercase;
 }
 .hero__span {
   color: #4f8ff0;
@@ -179,6 +180,7 @@ button {
 }
 .services__content {
   margin: 80px auto;
+  width: 100%;
 }
 .services__title {
   color: #222;
@@ -199,12 +201,11 @@ button {
 }
 .services__cards {
   max-width: 1320px;
-  margin-top: 48px;
+  padding-top: 48px;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(424px, 1fr));
   gap: 24px;
-  flex-wrap: wrap;
 }
 .services__card {
   background: #fff;
@@ -317,7 +318,7 @@ button {
 
 .lawyers {
   background: #f7f7f7;
-  padding: 80px;
+  padding-top: 80px;
 }
 .lawyers__title {
   text-align: center;
@@ -330,9 +331,9 @@ button {
   margin: 24px auto 0;
 }
 .lawyers__flex {
-  margin-top: 48px;
-  display: flex;
-  justify-content: space-between;
+  padding-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(312px, 1fr));
   flex-wrap: wrap;
 }
 .lawyers__description {
@@ -372,13 +373,16 @@ button {
 }
 .feedback__wrapper {
   display: flex;
+  justify-content: space-between;
 }
 .feedback__card {
   padding: 32px;
   max-width: 648px;
+  background: var(--white-color-100, #fff);
+  box-shadow: 2px 2px 10px 0px rgba(33, 33, 33, 0.15);
 }
 .feedback__btn {
-  padding: 0 32px 80px;
+  padding: 32px 0 80px;
   display: flex;
   gap: 24px;
   width: 100%;
@@ -417,9 +421,8 @@ button {
   text-align: center;
 }
 .material__wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(424px, 1fr));
 }
 .material__card {
   padding-top: 48px;

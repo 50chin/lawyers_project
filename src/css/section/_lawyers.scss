@@ -1,6 +1,6 @@
 .lawyers {
   background: #f7f7f7;
-  padding: 80px;
+  padding-top: 80px;
 
   &__title {
     text-align: center;
@@ -15,9 +15,11 @@
   }
 
   &__flex {
-    margin-top: 48px;
-    display: flex;
-    justify-content: space-between;
+    padding-top: 48px;
+    // display: flex;
+    // justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(312px,1fr));
     flex-wrap: wrap;
   }
 

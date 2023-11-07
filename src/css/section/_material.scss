@@ -21,9 +21,11 @@
   }
 
   &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    // display: flex;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(424px, 1fr));
   }
 
   &__card {
@@ -31,8 +33,7 @@
     position: relative;
   }
 
-  &__img {
-  }
+
 
   &__card {
     &__title {
