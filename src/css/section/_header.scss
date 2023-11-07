@@ -62,12 +62,14 @@
     text-decoration: none;
   }
 
-  @media (max-width: 991px) {
+  @media (max-width: 990px) {
+    &__top {
+      max-width: 990px;
+    }
     &__nav {
       display: none;
     }
   }
   @media (max-width: 390px) {
-    
   }
 }
