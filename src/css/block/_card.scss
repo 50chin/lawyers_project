@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 24px;
   }
 
   &__content {
@@ -30,5 +31,11 @@
 
   &__review {
     padding-top: 16px;
+  }
+
+  @media (max-width: 390px) {
+    &__img{
+      display: none;
+    }
   }
 }

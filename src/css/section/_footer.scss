@@ -1,6 +1,6 @@
 .footer {
   background: #222;
-  display: none;
+  // display: none;
 
   &__line {
     opacity: 0.2;
@@ -48,11 +48,9 @@
     justify-content: space-between;
 
     &__info {
-      padding-top: 48px;
     }
 
     &__menu {
-      padding-top: 48px;
       color: #fff;
       font-size: 14px;
       font-weight: 700;
@@ -75,7 +73,7 @@
   .phone {
     padding-top: 32px;
   }
-  .mail {
+  .mail2 {
     padding-top: 32px;
   }
 
@@ -114,8 +112,6 @@
   }
 
   &__centre__question {
-    padding-top: 48px;
-
     &__person {
       display: flex;
       align-items: center;
@@ -147,7 +143,7 @@
     }
 
     &__btn {
-      padding: 24px 0 96px;
+      padding: 24px 0 80px;
 
       .btn {
         padding: 16px 24px;
@@ -179,6 +175,52 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
+    }
+  }
+  @media (max-width: 990px) {
+    &__top {
+      padding-top: 60px;
+    }
+
+    &__line {
+      margin-top: 40px;
+    }
+    &__top__about {
+      display: none;
+    }
+    &__centre {
+      padding-top: 24px;
+    }
+    &__centre__menu {
+      display: none;
+    }
+    &__centre__question__btn {
+      padding: 24px 0 60px;
+    }
+  }
+  @media (max-width: 390px) {
+    &__centre {
+      display: flex;
+      flex-direction: column;
+    }
+    &__centre__question {
+      // display: none;
+      padding-top: 40px;
+    }
+    &__centre__question__btn {
+      // display: none;
+    }
+
+    &__bottom {
+      height: 79px;
+    }
+    &__bottom__flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+
+      padding: 16px 0;
     }
   }
 }

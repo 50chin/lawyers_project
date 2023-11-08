@@ -1,6 +1,7 @@
 .lawyers {
   background: #f7f7f7;
   padding-top: 80px;
+  // display: none;
 
   &__title {
     text-align: center;
@@ -51,7 +52,7 @@
     }
     &__flex {
       display: flex;
-      justify-content: space-between;
+      // justify-content: space-between;
       gap: 24px;
       overflow: scroll;
       padding: 40px 0 60px;

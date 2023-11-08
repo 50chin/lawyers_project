@@ -1,11 +1,12 @@
 .services {
   background: #f7f7f7;
+  // display: none;
 
   &__flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    // width: 100%;
   }
 
   &__content {

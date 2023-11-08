@@ -1,5 +1,5 @@
 .material {
-  display: none;
+  // display: none;
   &__title {
     color: #222;
     font-size: 28px;
@@ -27,13 +27,18 @@
     // flex-wrap: wrap;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(424px, 1fr));
+    padding-top: 48px;
   }
 
   &__card {
-    padding-top: 48px;
+    // padding-top: 48px;
     position: relative;
   }
-
+  &__img {
+    object-fit: cover;
+    object-position: center;
+    // height: 270px;
+  }
   &__card {
     &__title {
       padding-top: 25px;
@@ -151,5 +156,62 @@
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+  }
+
+  @media (max-width: 990px) {
+    &__title {
+      font-size: 24px;
+      padding-top: 60px;
+    }
+    &__subtitle {
+      padding-top: 43px;
+    }
+    &__wrapper {
+      display: flex;
+      gap: 24px;
+      padding-top: 43px;
+      overflow: scroll;
+    }
+    &__card {
+      max-width: 336px;
+    }
+    &__card__background {
+      width: 337px;
+      height: 216px;
+    }
+    &__img {
+      width: 336px;
+      // height: 270px;
+    }
+    &__card__title {
+      padding-top: 16px;
+    }
+    &__card__subtitle {
+      padding-bottom: 16px;
+    }
+  }
+  @media (max-width: 390px) {
+    &__title {
+      font-size: 24px;
+      padding-top: 40px;
+    }
+    &__subtitle {
+      font-size: 14px;
+      padding-top: 29px;
+    }
+    &__card {
+      max-width: 250px;
+    }
+    &__img {
+      width: 250px;
+      height: 200px;
+    }
+    &__card__background {
+      width: 250px;
+      height: 200px;
+    }
+    &__card__title {
+      font-size: 14px;
+    }
   }
 }

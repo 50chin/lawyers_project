@@ -10,8 +10,10 @@ body {
 }
 
 .container {
-  max-width: 1320px;
+  max-width: 1458px;
   margin: 0 auto;
+  padding: 0 69px;
+  box-sizing: content-box;
 }
 
 button {
@@ -20,14 +22,15 @@ button {
 
 @media (max-width: 991px) {
   .container {
-    max-width: 694px;
+    max-width: 834px;
     margin: 0 auto;
   }
 }
 @media (max-width: 390px) {
   .container {
-    max-width: 342px;
+    max-width: 392px;
     margin: 0 auto;
+    padding: 0 25px;
   }
 }
 .header {
@@ -99,13 +102,13 @@ button {
 .hero {
   background-image: url(../img/bg/main_top.webp);
   background-repeat: no-repeat;
-  max-width: 1920px;
+  background-size: cover;
+  background-position: center;
 }
 .hero__flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
 }
 .hero__content {
   text-align: center;
@@ -215,10 +218,6 @@ button {
 }
 @media (max-width: 390px) {
   .hero {
-    max-width: 845px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     height: 486px;
   }
   .hero__title {
@@ -245,7 +244,6 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
 }
 .services__content {
   margin: 80px auto;
@@ -503,7 +501,6 @@ button {
   }
   .lawyers__flex {
     display: flex;
-    justify-content: space-between;
     gap: 24px;
     overflow: scroll;
     padding: 40px 0 60px;
@@ -533,6 +530,8 @@ button {
 
 .feedback {
   background-image: url(../img/feedback/Фон\ блока.png);
+  background-size: cover;
+  background-position: center;
 }
 .feedback__top__flex {
   display: flex;
@@ -554,12 +553,14 @@ button {
   text-transform: uppercase;
 }
 .feedback__wrapper {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
 .feedback__card {
   padding: 32px;
   max-width: 648px;
+  width: 100%;
   background: var(--white-color-100, #fff);
   box-shadow: 2px 2px 10px 0px rgba(33, 33, 33, 0.15);
 }
@@ -582,10 +583,43 @@ button {
   background: #4f8ff0;
   color: #fff;
 }
-
-.material {
-  display: none;
+@media (max-width: 990px) {
+  .feedback__title {
+    font-size: 24px;
+  }
+  .feedback__card {
+    width: 576px;
+  }
+  .feedback__wrapper {
+    overflow: scroll;
+  }
 }
+@media (max-width: 390px) {
+  .feedback__top__flex {
+    padding: 40px 0 37px;
+  }
+  .feedback__title {
+    font-size: 20px;
+  }
+  .feedback__card {
+    max-width: 340px;
+    padding: 24px;
+  }
+  .feedback__navigation {
+    display: none;
+  }
+  .feedback__person {
+    width: 50px;
+    height: 50px;
+  }
+  .feedback__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
 .material__title {
   color: #222;
   font-size: 28px;
@@ -608,10 +642,16 @@ button {
 .material__wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(424px, 1fr));
+  padding-top: 48px;
 }
 .material__card {
-  padding-top: 48px;
   position: relative;
+}
+.material__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .material__card__title {
   padding-top: 25px;
@@ -716,10 +756,64 @@ button {
   top: 50%;
   left: 50%;
 }
+@media (max-width: 990px) {
+  .material__title {
+    font-size: 24px;
+    padding-top: 60px;
+  }
+  .material__subtitle {
+    padding-top: 43px;
+  }
+  .material__wrapper {
+    display: flex;
+    gap: 24px;
+    padding-top: 43px;
+    overflow: scroll;
+  }
+  .material__card {
+    max-width: 336px;
+  }
+  .material__card__background {
+    width: 337px;
+    height: 216px;
+  }
+  .material__img {
+    width: 336px;
+  }
+  .material__card__title {
+    padding-top: 16px;
+  }
+  .material__card__subtitle {
+    padding-bottom: 16px;
+  }
+}
+@media (max-width: 390px) {
+  .material__title {
+    font-size: 24px;
+    padding-top: 40px;
+  }
+  .material__subtitle {
+    font-size: 14px;
+    padding-top: 29px;
+  }
+  .material__card {
+    max-width: 250px;
+  }
+  .material__img {
+    width: 250px;
+    height: 200px;
+  }
+  .material__card__background {
+    width: 250px;
+    height: 200px;
+  }
+  .material__card__title {
+    font-size: 14px;
+  }
+}
 
 .footer {
   background: #222;
-  display: none;
 }
 .footer__line {
   opacity: 0.2;
@@ -763,11 +857,7 @@ button {
   display: flex;
   justify-content: space-between;
 }
-.footer__centre__info {
-  padding-top: 48px;
-}
 .footer__centre__menu {
-  padding-top: 48px;
   color: #fff;
   font-size: 14px;
   font-weight: 700;
@@ -786,7 +876,7 @@ button {
 .footer .phone {
   padding-top: 32px;
 }
-.footer .mail {
+.footer .mail2 {
   padding-top: 32px;
 }
 .footer__centre__contact__flex {
@@ -816,9 +906,6 @@ button {
   font-weight: 700;
   line-height: 150%;
 }
-.footer__centre__question {
-  padding-top: 48px;
-}
 .footer__centre__question__person {
   display: flex;
   align-items: center;
@@ -845,7 +932,7 @@ button {
   line-height: 150%;
 }
 .footer__centre__question__btn {
-  padding: 24px 0 96px;
+  padding: 24px 0 80px;
 }
 .footer__centre__question__btn .btn {
   padding: 16px 24px;
@@ -873,6 +960,45 @@ button {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+@media (max-width: 990px) {
+  .footer__top {
+    padding-top: 60px;
+  }
+  .footer__line {
+    margin-top: 40px;
+  }
+  .footer__top__about {
+    display: none;
+  }
+  .footer__centre {
+    padding-top: 24px;
+  }
+  .footer__centre__menu {
+    display: none;
+  }
+  .footer__centre__question__btn {
+    padding: 24px 0 60px;
+  }
+}
+@media (max-width: 390px) {
+  .footer__centre {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__centre__question {
+    padding-top: 40px;
+  }
+  .footer__bottom {
+    height: 79px;
+  }
+  .footer__bottom__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 0;
+  }
 }
 
 .phone {
@@ -1064,6 +1190,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 24px;
 }
 .card__content {
   max-width: 401px;
@@ -1085,4 +1212,9 @@ button {
 }
 .card__review {
   padding-top: 16px;
+}
+@media (max-width: 390px) {
+  .card__img {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

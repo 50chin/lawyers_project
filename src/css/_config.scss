@@ -10,8 +10,10 @@ body {
 }
 
 .container {
-  max-width: 1320px;
+  max-width: 1458px;
   margin: 0 auto;
+  padding: 0 69px;
+  box-sizing: content-box;
 }
 
 button {
@@ -20,14 +22,15 @@ button {
 
 @media (max-width: 991px) {
   .container {
-    max-width: 694px;
+    max-width: 834px;
     margin: 0 auto;
   }
 }
 
 @media (max-width: 390px) {
   .container {
-    max-width: 342px;
+    max-width: 392px;
     margin: 0 auto;
+    padding: 0 25px;
   }
 }
