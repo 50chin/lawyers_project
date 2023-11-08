@@ -26,7 +26,7 @@ button {
     margin: 0 auto;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 424px) {
   .container {
     max-width: 392px;
     margin: 0 auto;
@@ -216,7 +216,7 @@ button {
     margin-top: 36px;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 424px) {
   .hero {
     height: 486px;
   }
@@ -341,7 +341,7 @@ button {
     padding: 30px 32px 40px;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 424px) {
   .services__content {
     margin: 40px auto;
   }
@@ -439,7 +439,7 @@ button {
     font-size: 24px;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 424px) {
   .company__img {
     display: none;
   }
@@ -509,7 +509,7 @@ button {
     padding: 60px 20px 84px;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 424px) {
   .lawyers {
     padding-top: 40px;
   }
@@ -594,7 +594,7 @@ button {
     overflow: scroll;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 424px) {
   .feedback__top__flex {
     padding: 40px 0 37px;
   }
@@ -787,7 +787,7 @@ button {
     padding-bottom: 16px;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 424px) {
   .material__title {
     font-size: 24px;
     padding-top: 40px;
@@ -981,7 +981,7 @@ button {
     padding: 24px 0 60px;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 424px) {
   .footer__centre {
     display: flex;
     flex-direction: column;
@@ -1012,7 +1012,7 @@ button {
   align-items: center;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 424px) {
   .mail {
     display: none;
   }
@@ -1042,7 +1042,7 @@ button {
     font-size: 16px;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 424px) {
   .logo__title {
     font-size: 22px;
   }
@@ -1114,7 +1114,7 @@ button {
     max-width: 300px;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 424px) {
   .person {
     max-width: 250px;
   }
@@ -1213,7 +1213,7 @@ button {
 .card__review {
   padding-top: 16px;
 }
-@media (max-width: 390px) {
+@media (max-width: 424px) {
   .card__img {
     display: none;
   }
