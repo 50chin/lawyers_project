@@ -5,9 +5,7 @@
   &__line {
     opacity: 0.2;
     background: #8c8c8c;
-    max-width: 1320px;
     height: 1px;
-    width: 100%;
     margin-top: 48px;
   }
 
@@ -144,20 +142,6 @@
 
     &__btn {
       padding: 24px 0 80px;
-
-      .btn {
-        padding: 16px 24px;
-        font-size: 14px;
-        font-weight: 900;
-        line-height: 120%;
-        text-transform: uppercase;
-
-        &:hover {
-          border: 2px solid #4f8ff0;
-          background: #4f8ff0;
-          color: #fff;
-        }
-      }
     }
   }
 

@@ -67,19 +67,19 @@
             <button class="hero__btn btn">Наши услуги</button>
             <div class="hero__end">
               <div class="hero__slider">
-                <button class="hero__slider1 btn"></button>
-                <button class="hero__slider2 btn"></button>
-                <button class="hero__slider3 btn"></button>
+                <button class="hero__slider1 btn__nav"></button>
+                <button class="hero__slider2 btn__nav"></button>
+                <button class="hero__slider3 btn__nav"></button>
               </div>
               <!-- Кнопка стрелки  -->
               <div class="hero__navigation">
-                <button class="hero__navigation__left btn">
+                <button class="hero__navigation__left navi">
                   <img src="./src/img/icon/left.svg" alt="left" title="left" />
                 </button>
-                <button class="hero__navigation__line btn">
+                <button class="hero__navigation__line navi">
                   <img src="./src/img/icon/Line.svg" alt="line" />
                 </button>
-                <button class="hero__navigation__rigth btn">
+                <button class="hero__navigation__rigth navi">
                   <img
                     src="./src/img/icon/right.svg"
                     alt="right"
@@ -428,13 +428,13 @@
           <div class="feedback__top__flex">
             <h2 class="feedback__title">Что о нас говорят клиенты</h2>
             <div class="feedback__navigation">
-              <button class="btn">
+              <button class="navi">
                 <img src="./src/img/icon/left_blue.svg" alt="" />
               </button>
-              <button class="btn">
+              <button class="navi" disabled>
                 <img src="./src/img/icon/Line_blue.svg" alt="" />
               </button>
-              <button class="btn">
+              <button class="navi">
                 <img src="./src/img/icon/right_blue.svg" alt="" />
               </button>
             </div>
@@ -442,12 +442,20 @@
           <div class="feedback__wrapper">
             <div class="feedback__card">
               <div class="card__flex">
-                <img class="feedback__person" src="./src/img/feedback/1.svg" alt="" />
+                <img
+                  class="feedback__person"
+                  src="./src/img/feedback/1.svg"
+                  alt=""
+                />
                 <div class="card__content">
                   <p class="card__company">ООО “ИТ Консалтинг”</p>
                   <p class="card__name">Логинова Анастасия</p>
                 </div>
-                <img class="card__img" src="./src/img/feedback/перо.svg" alt="" />
+                <img
+                  class="card__img"
+                  src="./src/img/feedback/перо.svg"
+                  alt=""
+                />
               </div>
               <p class="card__review">
                 Многие думают, что Lorem Ipsum - взятый с потолка
@@ -460,12 +468,20 @@
             </div>
             <div class="feedback__card">
               <div class="card__flex">
-                <img class="feedback__person" src="./src/img/feedback/2.png" alt="" />
+                <img
+                  class="feedback__person"
+                  src="./src/img/feedback/2.png"
+                  alt=""
+                />
                 <div class="card__content">
                   <p class="card__company">АО “ПРОМАРШ””</p>
                   <p class="card__name">Макаров Сергей</p>
                 </div>
-                <img class="card__img" src="./src/img/feedback/перо.svg" alt="" />
+                <img
+                  class="card__img"
+                  src="./src/img/feedback/перо.svg"
+                  alt=""
+                />
               </div>
               <p class="card__review">
                 Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка
@@ -475,7 +491,6 @@
                 нужный объём.
               </p>
             </div>
-            
           </div>
           <div class="feedback__btn">
             <button class="btn">Все отзывы</button>
@@ -612,7 +627,10 @@
                 <div class="footer__centre__contact__text">
                   <p class="footer__centre__contact__text__top">Наш адрес</p>
                   <p class="footer__centre__contact__text__bot">
-                    г. Одинцово, пр. Будапештсткая, 40
+                    <a
+                      href="https://yandex.ru/maps/2/saint-petersburg/house/budapeshtskaya_ulitsa_40k1/Z0kYdQBnT0ADQFtjfXR0eHlqYg==/?ll=30.377655%2C59.859596&z=16"
+                      >г. Одинцово, пр. Будапештсткая, 40</a
+                    >
                   </p>
                 </div>
               </div>
@@ -627,7 +645,7 @@
                     Запись на консультанцию
                   </p>
                   <p class="footer__centre__contact__text__bot">
-                    +7 (922) 022-94-82
+                    <a href="tel:+7(922)022-94-82">+7 (922) 022-94-82</a>
                   </p>
                 </div>
               </div>
@@ -642,19 +660,19 @@
                     Корреспонденция
                   </p>
                   <p class="footer__centre__contact__text__bot">
-                    janis62@yahoo.com
+                    <a href="mailto:janis62@yahoo.com">janis62@yahoo.com</a>
                   </p>
                 </div>
               </div>
             </div>
           </div>
           <div class="footer__centre__menu">
-            <p class="footer__centre__menu__p">Услуги</p>
-            <p class="footer__centre__menu__p">О компании</p>
-            <p class="footer__centre__menu__p">Сертификаты</p>
-            <p class="footer__centre__menu__p">Отзывы</p>
-            <p class="footer__centre__menu__p">Полезные материалы</p>
-            <p class="footer__centre__menu__p">Благотворительность</p>
+            <a href="#">Услуги</a>
+            <a href="#">О компании</a>
+            <a href="#">Сертификаты</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Полезные материалы</a>
+            <a href="#">Благотворительность</a>
           </div>
           <div class="footer__centre__question">
             <div class="footer__centre__question__person">
@@ -683,7 +701,7 @@
         <div class="container footer__bottom__flex">
           <p class="footer__bottom__text">Все права защищены, 2023</p>
           <p class="fotter__bottom__text2">
-            Политика обработки персональных данных
+            <a href="">Политика обработки персональных данных</a>
           </p>
         </div>
       </div>

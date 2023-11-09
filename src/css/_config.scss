@@ -20,6 +20,32 @@ button {
   cursor: pointer;
 }
 
+a {
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  &:hover {
+    color: #4f8ff0;
+  }
+}
+
+.btn {
+  cursor: url(../img/icon/pointer.svg), auto;
+  border: 2px solid #4f8ff0;
+  background: #4f8ff0;
+  color: #fff;
+  padding: 16px 24px;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 120%;
+  text-transform: uppercase;
+  transition: 0.5s;
+  &:hover {
+    background: #fff;
+    color: #4f8ff0;
+  }
+}
+
 @media (max-width: 991px) {
   .container {
     max-width: 834px;

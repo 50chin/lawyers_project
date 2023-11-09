@@ -14,7 +14,7 @@
   &__content {
     text-align: center;
     color: #fff;
-    margin: 180px auto 36px;
+    margin: 260px auto 36px;
   }
 
   &__title {
@@ -44,23 +44,14 @@
     margin: 0 auto;
   }
 
-  &__btn {
-    text-align: center;
-    font-size: 14px;
-    font-weight: 900;
-    line-height: 120%;
-    text-transform: uppercase;
-    display: inline-flex;
-    padding: 16px 24px;
-    align-items: flex-start;
-    gap: 10px;
+  .btn {
     margin-top: 48px;
+  }
 
-    &:hover {
-      border: 2px solid #4f8ff0;
-      background: #4f8ff0;
-      color: #fff;
-    }
+  &__btn__nav {
+    text-align: center;
+    display: inline-flex;
+    align-items: flex-start;
   }
 
   &__end {
@@ -93,8 +84,10 @@
 
   &__navigation {
     display: flex;
+    gap: 8px;
+    max-width: 70px;
 
-    .btn {
+    .navi {
       background: transparent;
       border: none;
     }
@@ -110,7 +103,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 529px;
+
+    &__content {
+      margin: 148px auto 24px;
+    }
     &__title {
       font-size: 24px;
       line-height: 120%;
@@ -120,7 +116,7 @@
       }
     }
 
-    &__btn {
+    .btn {
       margin-top: 46px;
     }
 
@@ -134,7 +130,9 @@
   }
 
   @media (max-width: 424px) {
-    height: 486px;
+    &__content {
+      margin: 142px auto 36px;
+    }
 
     &__title {
       font-size: 18px;
@@ -143,7 +141,7 @@
       }
     }
 
-    &__btn {
+    .btn {
       margin-top: 32px;
     }
 

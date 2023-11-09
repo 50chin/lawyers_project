@@ -10,7 +10,7 @@
   }
 
   &__content {
-    margin: 80px auto;
+    padding: 80px 0;
     width: 100%;
   }
 
@@ -43,6 +43,7 @@
     grid-template-columns: repeat(auto-fill, minmax(424px, 1fr));
     gap: 24px;
     // flex-wrap: wrap;
+    margin: 0 auto;
   }
 
   &__card {
@@ -83,26 +84,15 @@
   }
 
   &__btn {
-    font-size: 14px;
-    font-weight: 900;
-    line-height: 120%;
-    text-transform: uppercase;
-    padding: 16px 24px;
     display: block;
     margin: 48px auto 0;
-
-    &:hover {
-      border: 2px solid #4f8ff0;
-      background: #4f8ff0;
-      color: #fff;
-    }
   }
 
   // Tablet Version
 
   @media (max-width: 991px) {
     &__content {
-      margin: 60px auto;
+      padding: 60px 0;
     }
     &__title {
       font-size: 24px;
@@ -115,12 +105,20 @@
 
     &__cards {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(auto-fill, minmax(336px, 1fr));
+      max-width: 696px;
+      width: 100%;
     }
 
     &__card {
       max-width: 336px;
       padding: 30px 32px 40px;
+    }
+    &__card__subtitle {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
   }
 

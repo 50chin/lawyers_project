@@ -76,20 +76,6 @@
   &__btn {
     padding: 48px 0 80px;
     text-align: center;
-    .btn {
-      padding: 16px 24px;
-      font-size: 14px;
-      font-weight: 900;
-      line-height: 120%;
-      text-transform: uppercase;
-      margin: 0 auto;
-
-      &:hover {
-        border: 2px solid #4f8ff0;
-        background: #4f8ff0;
-        color: #fff;
-      }
-    }
   }
 
   &__card__background {
