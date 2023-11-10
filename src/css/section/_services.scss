@@ -40,7 +40,7 @@
     // justify-content: space-between;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    gap: 38px;
     // flex-wrap: wrap;
     margin: 48px auto;
   }
@@ -89,7 +89,7 @@
 
   // Tablet Version
 
-  @media (max-width: 1054px) {
+  @media (max-width: 1024px) {
     &__content {
       padding: 60px 0;
     }
@@ -105,8 +105,8 @@
     &__cards {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      max-width: 696px;
       width: 100%;
+      gap: 24px;
 
       &::-webkit-scrollbar {
         display: none;
@@ -116,7 +116,6 @@
     }
 
     &__card {
-      max-width: 336px;
       padding: 30px 32px 40px;
     }
     &__card__subtitle {
@@ -128,7 +127,7 @@
   }
 
   // Mobile Version
-  @media (max-width: 835px) {
+  @media (max-width: 650px) {
     &__content {
       padding: 40px auto;
     }
@@ -150,9 +149,8 @@
     }
 
     &__card {
-      max-width: 250px;
       padding: 24px 16px 32px;
-
+      max-width: 250px;
       &__subtitle {
         display: -webkit-box;
         -webkit-line-clamp: 3;
