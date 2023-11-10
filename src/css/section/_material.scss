@@ -1,5 +1,8 @@
 .material {
   // display: none;
+  &__content {
+    padding: 80px 0 80px;
+  }
   &__title {
     color: #222;
     font-size: 28px;
@@ -7,7 +10,6 @@
     line-height: 150%;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 80px;
   }
 
   &__subtitle {
@@ -15,19 +17,18 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 120%;
-    padding-top: 37px;
     max-width: 920px;
-    margin: 0 auto;
+    margin: 37px auto 0;
     text-align: center;
   }
 
   &__wrapper {
-    // display: flex;
-    // justify-content: space-between;
-    // flex-wrap: wrap;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(424px, 1fr));
-    padding-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fill, minmax(424px, 1fr));
+    margin-top: 48px;
   }
 
   &__card {
@@ -37,11 +38,12 @@
   &__img {
     object-fit: cover;
     object-position: center;
+    display: block;
     // height: 270px;
   }
   &__card {
     &__title {
-      padding-top: 25px;
+      margin-top: 25px;
       color: #222;
       font-size: 16px;
       font-weight: 700;
@@ -49,7 +51,7 @@
       max-width: 424px;
     }
     &__time {
-      padding-top: 16px;
+      margin-top: 16px;
       color: #222;
       font-size: 12px;
       font-weight: 300;
@@ -64,7 +66,7 @@
   }
 
   &__card__subtitle {
-    padding-top: 16px;
+    margin-top: 16px;
     color: #222;
     font-size: 14px;
     font-weight: 400;
@@ -74,9 +76,11 @@
   }
 
   &__btn {
-    padding: 48px 0 80px;
     text-align: center;
+    margin-top: 48px;
   }
+
+
 
   &__card__background {
     cursor: url(../img/icon/cursor_white.svg), auto;
@@ -156,6 +160,7 @@
       display: flex;
       gap: 24px;
       padding-top: 43px;
+      flex-wrap: nowrap;
       overflow: scroll;
     }
     &__card {
@@ -176,7 +181,7 @@
       padding-bottom: 16px;
     }
   }
-  @media (max-width: 424px) {
+  @media (max-width: 540px) {
     &__title {
       font-size: 24px;
       padding-top: 40px;

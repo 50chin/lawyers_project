@@ -5,16 +5,11 @@
   background-position: center;
   // display: none;
 
-  &__flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 
   &__content {
     text-align: center;
     color: #fff;
-    margin: 260px auto 36px;
+    padding: 260px 0 36px;
   }
 
   &__title {
@@ -129,7 +124,7 @@
     }
   }
 
-  @media (max-width: 424px) {
+  @media (max-width: 540px) {
     &__content {
       margin: 142px auto 36px;
     }

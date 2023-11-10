@@ -10,7 +10,7 @@
   }
 
   &__content {
-    padding: 80px 0;
+    padding: 80px 0 80px;
     width: 100%;
   }
 
@@ -35,7 +35,6 @@
 
   &__cards {
     max-width: 1320px;
-    padding-top: 48px;
     width: 100%;
     // display: flex;
     // justify-content: space-between;
@@ -43,7 +42,7 @@
     grid-template-columns: repeat(auto-fill, minmax(424px, 1fr));
     gap: 24px;
     // flex-wrap: wrap;
-    margin: 0 auto;
+    margin: 48px auto;
   }
 
   &__card {
@@ -85,12 +84,12 @@
 
   &__btn {
     display: block;
-    margin: 48px auto 0;
+    margin: 0 auto ;
   }
 
   // Tablet Version
 
-  @media (max-width: 991px) {
+  @media (max-width: 1054px) {
     &__content {
       padding: 60px 0;
     }
@@ -123,7 +122,7 @@
   }
 
   // Mobile Version
-  @media (max-width: 424px) {
+  @media (max-width: 835px) {
     &__content {
       margin: 40px auto;
     }
