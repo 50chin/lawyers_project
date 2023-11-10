@@ -294,7 +294,7 @@ a:hover {
   max-width: 1320px;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(424px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   margin: 48px auto;
 }
@@ -348,7 +348,7 @@ a:hover {
   }
   .services__cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(336px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     max-width: 696px;
     width: 100%;
     -ms-overflow-style: none; /* IE and Edge */
