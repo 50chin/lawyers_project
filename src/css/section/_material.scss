@@ -80,8 +80,6 @@
     margin-top: 48px;
   }
 
-
-
   &__card__background {
     cursor: url(../img/icon/cursor_white.svg), auto;
     width: 424px;
@@ -149,22 +147,30 @@
   }
 
   @media (max-width: 990px) {
+    &__content {
+      padding: 60px 0 60px;
+    }
     &__title {
       font-size: 24px;
-      padding-top: 60px;
     }
     &__subtitle {
-      padding-top: 43px;
+      margin-top: 43px;
     }
     &__wrapper {
       display: flex;
       gap: 24px;
-      padding-top: 43px;
+      margin-top: 43px;
       flex-wrap: nowrap;
       overflow: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
     }
     &__card {
       max-width: 336px;
+      padding-bottom: 16px;
     }
     &__card__background {
       width: 337px;
@@ -175,23 +181,23 @@
       // height: 270px;
     }
     &__card__title {
-      padding-top: 16px;
-    }
-    &__card__subtitle {
-      padding-bottom: 16px;
+      margin-top: 16px;
     }
   }
   @media (max-width: 540px) {
+    &__content {
+      padding: 40px 0 40px;
+    }
     &__title {
       font-size: 24px;
-      padding-top: 40px;
     }
     &__subtitle {
       font-size: 14px;
-      padding-top: 29px;
+      margin-top: 29px;
     }
     &__card {
       max-width: 250px;
+      padding-bottom: 6px;
     }
     &__img {
       width: 250px;

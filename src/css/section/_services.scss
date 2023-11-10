@@ -84,7 +84,7 @@
 
   &__btn {
     display: block;
-    margin: 0 auto ;
+    margin: 30px auto 0;
   }
 
   // Tablet Version
@@ -107,6 +107,12 @@
       grid-template-columns: repeat(auto-fill, minmax(336px, 1fr));
       max-width: 696px;
       width: 100%;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
     }
 
     &__card {
@@ -124,7 +130,7 @@
   // Mobile Version
   @media (max-width: 835px) {
     &__content {
-      margin: 40px auto;
+      padding: 40px auto;
     }
     &__title {
       font-size: 20px;
@@ -136,6 +142,11 @@
     &__cards {
       display: flex;
       overflow: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
     }
 
     &__card {
@@ -148,9 +159,6 @@
         -webkit-box-orient: vertical;
         overflow: hidden;
       }
-    }
-    &__btn {
-      margin: 30px auto 0;
     }
   }
 }

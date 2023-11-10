@@ -5,7 +5,6 @@
   background-position: center;
   // display: none;
 
-
   &__content {
     text-align: center;
     color: #fff;
@@ -100,14 +99,14 @@
     background-position: center;
 
     &__content {
-      margin: 148px auto 24px;
+      padding: 148px 0 24px;
     }
     &__title {
       font-size: 24px;
       line-height: 120%;
       span {
         font-size: 50px;
-        padding: 8px;
+        margin: 8px;
       }
     }
 
@@ -126,9 +125,8 @@
 
   @media (max-width: 540px) {
     &__content {
-      margin: 142px auto 36px;
+      padding: 142px 0 36px;
     }
-
     &__title {
       font-size: 18px;
       span {

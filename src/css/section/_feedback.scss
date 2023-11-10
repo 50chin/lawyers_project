@@ -10,7 +10,6 @@
   &__top__flex {
     display: flex;
     justify-content: space-between;
-
     max-width: 1320px;
     width: 100%;
   }
@@ -60,27 +59,35 @@
   }
 
   @media (max-width: 990px) {
+    &__content {
+      padding: 60px 0 60px;
+    }
     &__title {
       font-size: 24px;
     }
     &__card {
-      width: 576px;
+      min-width: 576px;
     }
     &__wrapper {
       overflow: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
     }
   }
 
   @media (max-width: 540px) {
-    &__top__flex {
-      padding: 40px 0 37px;
+    &__content {
+      padding: 40px 0 40px;
     }
+
     &__title {
       font-size: 20px;
     }
     &__card {
       max-width: 340px;
-
       padding: 24px;
     }
     &__navigation {
