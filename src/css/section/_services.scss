@@ -80,6 +80,10 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 120%;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   &__btn {
@@ -126,7 +130,6 @@
     }
   }
 
-  
   // Mobile Version
   @media (max-width: 650px) {
     &__content {

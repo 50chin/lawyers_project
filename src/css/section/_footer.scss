@@ -113,6 +113,13 @@
   }
 
   &__centre__question {
+    &__person__img {
+      border-radius: 50%;
+      object-fit: cover;
+      background-color: lightgray;
+      width: 65px;
+      height: 65px;
+    }
     &__person {
       display: flex;
       align-items: center;

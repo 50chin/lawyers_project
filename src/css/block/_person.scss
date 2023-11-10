@@ -11,7 +11,7 @@
 
   &__img {
     display: block;
-    width: 100%;
+    width: 312px;
     height: 320px;
     background: lightgray;
     object-fit: cover;
@@ -49,11 +49,17 @@
 
   @media (max-width: 990px) {
     max-width: 300px;
+    &__img {
+      width: 300px;
+    }
   }
   @media (max-width: 540px) {
     max-width: 250px;
     &__name {
       max-width: 218px;
+    }
+    &__img {
+      width: 250px;
     }
   }
 }

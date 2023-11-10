@@ -5,8 +5,12 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Nunito Sans;
 }
 
 .container {
@@ -134,6 +138,7 @@ a:hover {
   }
 }
 .hero {
+  background: lightgray;
   background-image: url(../img/bg/main_top.webp);
   background-repeat: no-repeat;
   background-size: cover;
@@ -329,6 +334,10 @@ a:hover {
   font-size: 14px;
   font-weight: 400;
   line-height: 120%;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .services__btn {
   display: block;
@@ -439,6 +448,7 @@ a:hover {
   display: block;
   width: 535px;
   height: 359px;
+  background: lightgray;
 }
 .company__btns {
   display: flex;
@@ -498,7 +508,6 @@ a:hover {
   margin-top: 48px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 .lawyers__description {
   text-align: center;
@@ -507,6 +516,9 @@ a:hover {
   line-height: 120%;
   inset: 0 0 0 0;
   padding: 83px 20px 84px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .lawyers__description:hover {
   opacity: 1;
@@ -534,12 +546,15 @@ a:hover {
     display: none;
   }
   .lawyers__description {
-    padding: 60px 20px 84px;
+    padding: 70px 20px 71px;
   }
 }
 @media (max-width: 540px) {
   .lawyers__content {
     padding: 40px 0 40px;
+  }
+  .lawyers__description {
+    padding: 60px 20px 61px;
   }
   .lawyers__title {
     font-size: 20px;
@@ -570,6 +585,14 @@ a:hover {
   max-width: 1320px;
   width: 100%;
 }
+.feedback__person {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: lightgray;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .feedback__navigation {
   display: flex;
   gap: 8px;
@@ -597,7 +620,7 @@ a:hover {
   padding: 32px;
   max-width: 648px;
   width: 100%;
-  background: var(--white-color-100, #fff);
+  background: #fff;
   box-shadow: 2px 2px 10px 0px rgba(33, 33, 33, 0.15);
 }
 .feedback__btn {
@@ -685,6 +708,9 @@ a:hover {
   -o-object-position: center;
      object-position: center;
   display: block;
+  background: lightgray;
+  width: 424px;
+  height: 270px;
 }
 .material__card__title {
   margin-top: 25px;
@@ -935,6 +961,14 @@ a:hover {
   font-weight: 700;
   line-height: 150%;
 }
+.footer__centre__question__person__img {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: lightgray;
+  width: 65px;
+  height: 65px;
+}
 .footer__centre__question__person {
   display: flex;
   align-items: center;
@@ -1166,7 +1200,7 @@ a:hover {
 }
 .person__img {
   display: block;
-  width: 100%;
+  width: 312px;
   height: 320px;
   background: lightgray;
   -o-object-fit: cover;
@@ -1202,6 +1236,9 @@ a:hover {
   .person {
     max-width: 300px;
   }
+  .person__img {
+    width: 300px;
+  }
 }
 @media (max-width: 540px) {
   .person {
@@ -1209,6 +1246,9 @@ a:hover {
   }
   .person__name {
     max-width: 218px;
+  }
+  .person__img {
+    width: 250px;
   }
 }
 
@@ -1227,13 +1267,11 @@ a:hover {
   color: #000;
   font-size: 14px;
   font-weight: 300;
-  margin-top: 40px;
 }
 .description__experience {
   color: #222;
   font-size: 16px;
   font-weight: 600;
-  margin-top: 40px;
 }
 .description__lt {
   position: absolute;

@@ -22,7 +22,6 @@
     text-align: center;
   }
 
-  
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -39,7 +38,9 @@
     object-fit: cover;
     object-position: center;
     display: block;
-    // height: 270px;
+    background: lightgray;
+    width: 424px;
+    height: 270px;
   }
   &__card {
     &__title {

@@ -28,7 +28,7 @@
     justify-content: space-between;
     // display: grid;
     // grid-template-columns: repeat(auto-fill, minmax(312px, 1fr));
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
   }
 
   &__description {
@@ -38,6 +38,9 @@
     line-height: 120%;
     inset: 0 0 0 0;
     padding: 83px 20px 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     &:hover {
       opacity: 1;
@@ -68,12 +71,16 @@
     }
 
     &__description {
-      padding: 60px 20px 84px;
+      padding: 70px 20px 71px;
     }
   }
   @media (max-width: 540px) {
     &__content {
       padding: 40px 0 40px;
+    }
+
+    &__description {
+      padding: 60px 20px 61px;
     }
     &__title {
       font-size: 20px;
