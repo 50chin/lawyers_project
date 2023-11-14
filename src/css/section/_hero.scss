@@ -61,12 +61,16 @@
 
   &__slider {
     max-width: 40px;
+    display: flex;
+    align-items: end;
+    gap: 8px;
   }
 
   &__slider1 {
     width: 4px;
     height: 40px;
     background: #4f8ff0;
+
     border: none;
   }
 

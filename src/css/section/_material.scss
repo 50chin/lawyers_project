@@ -32,8 +32,8 @@
 
   &__card {
     // padding-top: 48px;
-    position: relative;
   }
+
   &__img {
     object-fit: cover;
     object-position: center;
@@ -60,6 +60,7 @@
     }
 
     &__opacity {
+      position: relative;
       &:hover + h3 {
         color: #4f8ff0;
       }
@@ -90,6 +91,7 @@
     background: rgba(79, 143, 240, 0.4);
     transition: 0.5s;
     width: 100%;
+    inset: 0 0 0 0;
 
     &:hover {
       opacity: 1;
@@ -177,7 +179,6 @@
     }
     &__card__background {
       max-width: 337px;
-      height: 216px;
     }
     &__img {
       width: 336px;

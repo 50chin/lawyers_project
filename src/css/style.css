@@ -191,6 +191,9 @@ a:hover {
 }
 .hero__slider {
   max-width: 40px;
+  display: flex;
+  align-items: end;
+  gap: 8px;
 }
 .hero__slider1 {
   width: 4px;
@@ -709,9 +712,6 @@ a:hover {
   justify-content: space-between;
   margin-top: 48px;
 }
-.material__card {
-  position: relative;
-}
 .material__img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -736,6 +736,9 @@ a:hover {
   font-size: 12px;
   font-weight: 300;
   line-height: 120%;
+}
+.material__card__opacity {
+  position: relative;
 }
 .material__card__opacity:hover + h3 {
   color: #4f8ff0;
@@ -762,6 +765,7 @@ a:hover {
   background: rgba(79, 143, 240, 0.4);
   transition: 0.5s;
   width: 100%;
+  inset: 0 0 0 0;
 }
 .material__card__background:hover {
   opacity: 1;
@@ -842,7 +846,6 @@ a:hover {
   }
   .material__card__background {
     max-width: 337px;
-    height: 216px;
   }
   .material__img {
     width: 336px;
