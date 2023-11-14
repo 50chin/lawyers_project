@@ -28,7 +28,7 @@ ul {
 }
 
 a {
-  cursor: pointer;
+  cursor: url(../img/icon/pointer.svg), auto;
   color: #fff;
   text-decoration: none;
   &:hover {

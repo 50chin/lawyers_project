@@ -29,7 +29,7 @@ ul {
 }
 
 a {
-  cursor: pointer;
+  cursor: url(../img/icon/pointer.svg), auto;
   color: #fff;
   text-decoration: none;
 }
@@ -213,6 +213,10 @@ a:hover {
   background: transparent;
   border: none;
 }
+.hero__navigation .navi :hover {
+  color: #e6e6e6;
+  box-shadow: 0 0 10px 0 #e6e6e6 inset, 0 0 10px 4px #e6e6e6;
+}
 .hero__navigation__navigation2 {
   display: flex;
   align-items: center;
@@ -234,6 +238,7 @@ a:hover {
   .hero__title span {
     font-size: 50px;
     margin: 8px;
+    line-height: 100%;
   }
   .hero .btn {
     margin-top: 46px;
@@ -314,6 +319,7 @@ a:hover {
   align-items: center;
   gap: 15px;
   flex-shrink: 0;
+  transition: 1s;
   cursor: url(../img/icon/cursor_white.svg), auto;
 }
 .services__card:hover {
@@ -519,6 +525,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: 0.5s;
 }
 .lawyers__description:hover {
   opacity: 1;
@@ -601,6 +608,10 @@ a:hover {
   background: transparent;
   border: none;
 }
+.feedback__navigation .navi :hover {
+  color: #4f8ff0;
+  box-shadow: 0 0 10px 0 #4f8ff0 inset, 0 0 10px 4px #4f8ff0;
+}
 .feedback__title {
   color: #222;
   font-size: 28px;
@@ -612,7 +623,6 @@ a:hover {
   display: flex;
   justify-content: space-between;
   margin-top: 61px;
-  max-width: 1320px;
   width: 100%;
   gap: 24px;
 }
@@ -637,7 +647,7 @@ a:hover {
     font-size: 24px;
   }
   .feedback__card {
-    min-width: 576px;
+    max-width: 576px;
   }
   .feedback__wrapper {
     overflow: scroll;
@@ -656,7 +666,7 @@ a:hover {
     font-size: 20px;
   }
   .feedback__card {
-    max-width: 340px;
+    min-width: 340px;
     padding: 24px;
   }
   .feedback__navigation {
@@ -750,6 +760,8 @@ a:hover {
   opacity: 0;
   position: absolute;
   background: rgba(79, 143, 240, 0.4);
+  transition: 0.5s;
+  width: 100%;
 }
 .material__card__background:hover {
   opacity: 1;

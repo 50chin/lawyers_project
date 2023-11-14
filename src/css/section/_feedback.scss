@@ -28,6 +28,10 @@
     .navi {
       background: transparent;
       border: none;
+      :hover {
+        color: #4f8ff0;
+        box-shadow: 0 0 10px 0 #4f8ff0 inset, 0 0 10px 4px #4f8ff0;
+      }
     }
   }
 
@@ -43,7 +47,6 @@
     display: flex;
     justify-content: space-between;
     margin-top: 61px;
-    max-width: 1320px;
     width: 100%;
     // display: grid;
     // grid-template-columns: repeat(2, 1fr);
@@ -73,7 +76,7 @@
       font-size: 24px;
     }
     &__card {
-      min-width: 576px;
+      max-width: 576px;
     }
     &__wrapper {
       overflow: scroll;
@@ -94,7 +97,7 @@
       font-size: 20px;
     }
     &__card {
-      max-width: 340px;
+      min-width: 340px;
       padding: 24px;
     }
     &__navigation {
